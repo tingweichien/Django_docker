@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'firstapp/site.css' %}" />
+</head>
+<body>
+    <span class="message">Hello, there {{ name }}!</span>
+    <h1>{{data}}</h1>
+    <h2>現在時間: {{now}}</h2>
+    <img src="{% static 'image/dragonfly.jpg' %}" alt="歡迎" width=900px height=600px/>
+</body>
+</html>
